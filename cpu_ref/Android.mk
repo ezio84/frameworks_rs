@@ -53,7 +53,7 @@ LOCAL_SHARED_LIBRARIES += libbcc libbcinfo
 LOCAL_C_INCLUDES += frameworks/compile/libbcc/include
 LOCAL_C_INCLUDES += frameworks/rs
 
-LOCAL_CFLAGS += $(rs_base_CFLAGS)
+LOCAL_CFLAGS += $(rs_base_CFLAGS) -Qunused-arguments -Wno-unknown-warning-option
 
 LOCAL_LDLIBS := -lpthread -ldl
 LOCAL_MODULE_TAGS := optional
